@@ -14,9 +14,9 @@ const JobListings = ({ isHome  =  false }) => {
         : '/api/jobs';
         try{
           const res = await fetch(apiUrl);
-          console.log("res " , res)
+          console.log("res " ,res);
           const data = await res.json();
-          console.log("datra " ,data)
+          console.log("data " ,data);
           setJobs(data);
         } catch (error){
           console.log('Error fetching data', error);
